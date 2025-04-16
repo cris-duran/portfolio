@@ -2,11 +2,12 @@ import { AppBar, Toolbar, Tabs, Tab } from '@mui/material';
 import { useState } from 'react';
 import { styles } from '@constants/styles';
 import { Link } from 'react-router-dom';
+import { routes } from '@constants/routes';
 
 function Header() {
     const [value, setValue] = useState('home');
 
-    const handleChange = (event: React.SyntheticEvent, newValue: string) => {
+    const handleChange = (_: React.SyntheticEvent, newValue: string) => {
         setValue(newValue);
     };
 
@@ -19,13 +20,11 @@ function Header() {
                 onChange={handleChange}
                 sx={styles.tabs}
                 centered 
-                aria-label="Selector de secciones"
+                aria-label="Selector de paginas"
             >
-                <Tab value="home" label="Inicio" component={Link} to="/" />
-                <Tab value="about" label="Sobre mi" component={Link} to="/about" />
-                <Tab value="projects" label="Proyectos" component={Link} to="/projects" />
-                <Tab value="experience" label="Experiencia" component={Link} to="/experience" />
-                <Tab value="contact" label="Contacto" component={Link} to="/contact" />
+                {routes.map((route) => (
+                    <Tab key={route.name} value={route.value} label={route.name} component={Link} to={route.path} sx={styles.tab} disableRipple/>
+                ))}
             </Tabs>
         </Toolbar>
     </AppBar>
@@ -33,4 +32,4 @@ function Header() {
   )
 }
 
-export default Header
+export default Header;

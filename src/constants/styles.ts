@@ -27,5 +27,11 @@ export const styles: { [key: string]: React.CSSProperties | SxProps } = {
                 color: 'turquoise.light'
             }
         }
+    },
+    tab: {
+        textTransform: 'none',
+        '&:hover': {
+            color: 'turquoise.dark'
+        }
     }
 };

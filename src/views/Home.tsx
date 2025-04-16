@@ -1,5 +1,6 @@
 import { Container, Rating } from "@mui/material";
 import cristianLogo from "@assets/cristian.png";
+
 function Home({ count, setCount }: { count: number, setCount: (count: number) => void }) {
     return (
         <Container maxWidth="lg">
