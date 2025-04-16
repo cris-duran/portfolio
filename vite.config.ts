@@ -19,7 +19,8 @@ export default defineConfig({
     alias: {
       '@components': path.resolve(process.cwd(), './src/components'),
       '@assets': path.resolve(process.cwd(), './src/assets'),
-      '@constants': path.resolve(process.cwd(), './src/constants')
+      '@constants': path.resolve(process.cwd(), './src/constants'),
+      '@views': path.resolve(process.cwd(), './src/views')
     }
   }
  });
