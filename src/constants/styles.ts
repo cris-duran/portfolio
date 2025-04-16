@@ -13,9 +13,6 @@ export const styles: { [key: string]: React.CSSProperties | SxProps } = {
     appBar: {
         backgroundColor: 'rgb(29, 23, 39)',
         boxShadow: 'none',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
         borderBottom: '1px solid #e0e0e0',
     },
     tabs: {
