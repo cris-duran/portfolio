@@ -8,6 +8,7 @@ export const styles: { [key: string]: React.CSSProperties | SxProps } = {
         margin: '0',
         padding: '0',
         boxSizing: 'border-box',
+        backgroundColor: 'rgb(29, 23, 39)',
     },
     appBar: {
         backgroundColor: 'rgb(29, 23, 39)',

@@ -10,7 +10,7 @@ function Header({ value, setValue }: { value: string, setValue: (value: string) 
     };
   
     return (
-        <AppBar position="sticky" sx={styles.appBar}>
+        <AppBar className="header" position="sticky" sx={styles.appBar}>
             <Toolbar disableGutters >
                 <Tabs 
                     value={value} 
