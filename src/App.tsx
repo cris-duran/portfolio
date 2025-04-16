@@ -4,14 +4,17 @@ import Main from '@components/Main';
 import Footer from '@components/Footer';
 import { Paper } from '@mui/material';
 import { styles } from './constants/styles';
+import { useState } from 'react';
 
 function App() {
+  const [value, setValue] = useState('home');
+
   return (
     <>
       <Paper sx={styles.mainContainer}>
-        <Header />
+        <Header value={value} setValue={setValue} />
         <Main />
-        <Footer />
+        <Footer setValue={setValue} />
       </Paper>
     </>
   )
