@@ -17,6 +17,16 @@ declare module "@mui/material/styles" {
 			light: string;
 			dark: string;
 		};
+		orange: {
+			main: string;
+			light: string;
+			dark: string;
+		};
+		yellow: {
+			main: string;
+			light: string;
+			dark: string;
+		};
 	}
 	interface PaletteOptions {
 		turquoise?: {
@@ -30,6 +40,16 @@ declare module "@mui/material/styles" {
 			dark: string;
 		};
 		black?: {
+			main: string;
+			light: string;
+			dark: string;
+		};
+		orange?: {
+			main: string;
+			light: string;
+			dark: string;
+		};
+		yellow?: {
 			main: string;
 			light: string;
 			dark: string;
@@ -53,6 +73,16 @@ const theme = createTheme({
 			main: "#4ECDC4", // Un color turquesa
 			light: "#6EDDD5",
 			dark: "#3EBDB4",
+		},
+		orange: {
+			main: "#FF6B6B",
+			light: "#FF8E8E",
+			dark: "#E64A4A",
+		},
+		yellow: {
+			main: "#FFD700",
+			light: "#FFD700",
+			dark: "#FFD700",
 		},
 		white: {
 			main: "#FFFFFF",

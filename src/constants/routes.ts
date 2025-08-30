@@ -1,4 +1,4 @@
-import About from "@views/About";
+// import About from "@views/About";
 import Contact from "@views/Contact";
 import Experience from "@views/Experience";
 import Home from "@views/Home";
@@ -11,12 +11,12 @@ export const routes = [
 		path: "/",
 		component: Home,
 	},
-	{
-		name: "Sobre mi",
-		value: "aboutMe",
-		path: "/about-me",
-		component: About,
-	},
+	// {
+	// 	name: "Sobre mi",
+	// 	value: "aboutMe",
+	// 	path: "/about-me",
+	// 	component: About,
+	// },
 	{
 		name: "Proyectos",
 		value: "projects",
