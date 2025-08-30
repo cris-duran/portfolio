@@ -1,28 +1,47 @@
 import Logo from "@components/Logo";
-import { Box, Container, Typography } from "@mui/material";
+import {
+	Box,
+	Container,
+	Typography,
+	useTheme,
+	useMediaQuery,
+} from "@mui/material";
 
 function Home() {
+	const theme = useTheme();
+	const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
+	const isTablet = useMediaQuery(theme.breakpoints.down("md"));
+
 	return (
 		<section className="home">
 			<article className="centered">
 				<Container
 					maxWidth="lg"
-					style={{
+					sx={{
 						display: "flex",
 						flexDirection: "column",
 						alignItems: "center",
 						textAlign: "center",
+						padding: { xs: "0 16px", sm: "0 24px", md: "0 32px" },
 					}}
 				>
 					{/* Imagen arriba */}
-					<Box sx={{ marginBottom: 3, marginTop: 3 }}>
-						<Logo size={255} isRating={true} />
+					<Box
+						sx={{
+							marginBottom: { xs: 2, sm: 3 },
+							marginTop: { xs: 2, sm: 3 },
+						}}
+					>
+						<Logo
+							size={isMobile ? 180 : isTablet ? 220 : 255}
+							isRating={true}
+						/>
 					</Box>
 
 					{/* Nombre */}
 					<Typography
 						variant="h1"
-						fontSize={36}
+						fontSize={{ xs: 24, sm: 30, md: 36 }}
 						color="white"
 						sx={{ marginBottom: 1 }}
 					>
@@ -40,9 +59,13 @@ function Home() {
 					{/* Descripción */}
 					<Typography
 						variant="body1"
-						fontSize={14}
+						fontSize={{ xs: 12, sm: 13, md: 14 }}
 						color="white"
-						sx={{ marginBottom: 3, maxWidth: "800px" }}
+						sx={{
+							marginBottom: 3,
+							maxWidth: { xs: "100%", sm: "90%", md: "800px" },
+							padding: { xs: "0 8px", sm: "0" },
+						}}
 					>
 						Desde chico siempre me ha gustado aprender cosas nuevas y la
 						tecnología se convirtió en una de mis mayores pasiones. Soy{" "}

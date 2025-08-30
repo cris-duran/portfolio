@@ -27,7 +27,14 @@ function Icons({
 	};
 
 	return (
-		<ButtonGroup>
+		<ButtonGroup
+			sx={{
+				"& .MuiButton-root": {
+					padding: { xs: "4px", sm: "8px" },
+					minWidth: { xs: "32px", sm: "40px" },
+				},
+			}}
+		>
 			<Button
 				variant="text"
 				sx={buttonStyle}

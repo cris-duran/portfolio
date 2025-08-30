@@ -23,6 +23,9 @@ export const styles: { [key: string]: React.CSSProperties | SxProps } = {
 		"& .MuiTab-root": {
 			color: "white.light",
 			transition: "all 0.15s ease-in-out",
+			fontSize: { xs: "12px", sm: "14px" },
+			minWidth: { xs: "60px", sm: "80px" },
+			padding: { xs: "6px 8px", sm: "12px 16px" },
 			"&.Mui-selected": {
 				color: "turquoise.light",
 			},
