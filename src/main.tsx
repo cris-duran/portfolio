@@ -1,15 +1,20 @@
-import { createRoot } from 'react-dom/client';
-import './index.css';
-import App from './App.tsx';
-import { CssBaseline, ThemeProvider } from '@mui/material';
-import theme from './theme';
-import { BrowserRouter } from 'react-router-dom';
+import { CssBaseline, ThemeProvider } from "@mui/material";
+import { createRoot } from "react-dom/client";
+import { BrowserRouter } from "react-router-dom";
+import "./index.css";
+import App from "./App.tsx";
+import theme from "./theme";
 
-createRoot(document.getElementById('root')!).render(
-  <BrowserRouter>
-    <ThemeProvider theme={theme}>
-      <CssBaseline />
-      <App />
-    </ThemeProvider>
-  </BrowserRouter>,
-)
+const root = document.getElementById("root");
+if (!root) {
+	throw new Error("Root element not found");
+}
+
+createRoot(root).render(
+	<BrowserRouter>
+		<ThemeProvider theme={theme}>
+			<CssBaseline />
+			<App />
+		</ThemeProvider>
+	</BrowserRouter>,
+);

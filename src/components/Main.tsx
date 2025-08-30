@@ -1,6 +1,6 @@
+import { routes } from '@constants/routes';
 import { useState } from 'react';
 import { Route, Routes } from 'react-router-dom';
-import { routes } from '@constants/routes';
 
 function Main() {
   const [count, setCount] = useState(0);
