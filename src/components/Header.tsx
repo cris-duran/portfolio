@@ -1,7 +1,9 @@
 import { routes } from "@constants/routes";
 import { styles } from "@constants/styles";
-import { AppBar, Tab, Tabs, Toolbar } from "@mui/material";
+import { AppBar, Box, Tab, Tabs, Toolbar, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
+import Icons from "./Icons";
+import Logo from "./Logo";
 
 function Header({
 	value,
@@ -16,7 +18,32 @@ function Header({
 
 	return (
 		<AppBar className="header centered" position="sticky" sx={styles.appBar}>
-			<Toolbar disableGutters>
+			<Toolbar
+				disableGutters
+				sx={{
+					display: "flex",
+					justifyContent: "space-between",
+					alignItems: "center",
+					width: "100%",
+				}}
+			>
+				{/* Logo y nombre a la izquierda */}
+				<Box
+					sx={{ display: "flex", alignItems: "center", gap: 1, marginLeft: 2 }}
+				>
+					<Logo size={40} />
+					<Typography
+						variant="h6"
+						color="white"
+						sx={{
+							fontSize: "14px",
+						}}
+					>
+						Cristian Durán
+					</Typography>
+				</Box>
+
+				{/* Tabs centradas */}
 				<Tabs
 					value={value}
 					onChange={handleChange}
@@ -36,6 +63,11 @@ function Header({
 						/>
 					))}
 				</Tabs>
+
+				{/* Iconos a la derecha */}
+				<Box sx={{ width: "20%", display: "flex", justifyContent: "flex-end" }}>
+					<Icons size={18} />
+				</Box>
 			</Toolbar>
 		</AppBar>
 	);

@@ -1,22 +1,7 @@
-import cristianLogo from "@assets/cristian.png";
-import {
-	Button,
-	ButtonGroup,
-	Card,
-	CardContent,
-	CardMedia,
-	Container,
-	Rating,
-	Typography,
-} from "@mui/material";
+import Logo from "@components/Logo";
+import { Box, Container, Typography } from "@mui/material";
 
-function Home({
-	count,
-	setCount,
-}: {
-	count: number;
-	setCount: (count: number) => void;
-}) {
+function Home() {
 	return (
 		<section className="home">
 			<article className="centered">
@@ -30,62 +15,9 @@ function Home({
 					}}
 				>
 					{/* Imagen arriba */}
-					<Card
-						variant="outlined"
-						sx={{
-							backgroundColor: "rgb(29, 23, 39)",
-							maxWidth: 255,
-							position: "relative",
-							marginBottom: 3,
-							marginTop: 3,
-							borderRadius: "100%",
-							boxShadow: "0 8px 32px rgba(0, 0, 0, 0.3)",
-							overflow: "hidden",
-							transition: "transform 0.3s ease-in-out",
-							"&:hover": {
-								transform: "scale(1.05)",
-							},
-						}}
-					>
-						<CardMedia
-							component="img"
-							image={cristianLogo}
-							title="Cristian Duran Avatar"
-							sx={{
-								borderRadius: "100%",
-								backgroundColor: "white",
-								padding: "1px",
-								width: "100%",
-								margin: "auto",
-							}}
-						/>
-						<CardContent
-							sx={{
-								backgroundColor: "rgba(29, 23, 39, 0.8)",
-								position: "absolute",
-								bottom: 0,
-								left: 0,
-								right: 0,
-								textAlign: "center",
-								padding: "8px",
-							}}
-						>
-							<Rating
-								name="half-rating-read"
-								defaultValue={5}
-								precision={0.5}
-								readOnly
-								sx={{
-									"& .MuiRating-iconFilled": {
-										color: "#FFD700",
-									},
-									"& .MuiRating-iconEmpty": {
-										color: "#666",
-									},
-								}}
-							/>
-						</CardContent>
-					</Card>
+					<Box sx={{ marginBottom: 3, marginTop: 3 }}>
+						<Logo size={255} isRating={true} />
+					</Box>
 
 					{/* Nombre */}
 					<Typography
@@ -94,7 +26,7 @@ function Home({
 						color="white"
 						sx={{ marginBottom: 1 }}
 					>
-						CRISTIAN DURAN
+						CRISTIAN DURÁN
 					</Typography>
 					{/* Cargo */}
 					<Typography
@@ -239,11 +171,11 @@ function Home({
 						color="white"
 						sx={{ marginBottom: 3, maxWidth: "800px" }}
 					>
-						Mi última experiencia fue en{" "}
+						Actualmente estoy en{" "}
 						<span style={{ color: "orange", fontWeight: "bold" }}>Autored</span>
-						, donde participé en varios proyectos de software, colaborando con
-						el equipo en integraciones de APIs y distintos desarrollos usando un
-						stack bien variado (
+						, donde he participado en varios proyectos de software, colaborando
+						con el equipo en integraciones de APIs y distintos desarrollos
+						usando un stack bien variado (
 						<span style={{ color: "turquoise", fontWeight: "bold" }}>
 							React
 						</span>
@@ -303,30 +235,6 @@ function Home({
 						técnico, sino también con las ganas de aprender, compartir y crecer
 						junto al equipo.{" "}
 					</Typography>
-
-					{/* Botones */}
-					<ButtonGroup sx={{ marginBottom: 3 }}>
-						<Button variant="outlined" color="secondary">
-							<Typography variant="h6" fontSize={24} color="white">
-								Linkedin
-							</Typography>
-						</Button>
-						<Button variant="outlined" color="secondary">
-							<Typography variant="h6" fontSize={24} color="white">
-								Github
-							</Typography>
-						</Button>
-					</ButtonGroup>
-
-					<div className="card">
-						<button type="button" onClick={() => setCount(count + 1)}>
-							count is {count}
-						</button>
-						<p>Development by Cristian Duran</p>
-					</div>
-					<p className="read-the-docs">
-						Click on the Cristian Duran logo to learn more
-					</p>
 				</Container>
 			</article>
 		</section>
