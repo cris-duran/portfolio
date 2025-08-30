@@ -66,7 +66,7 @@ function Header({
 
 				{/* Iconos a la derecha */}
 				<Box sx={{ width: "20%", display: "flex", justifyContent: "flex-end" }}>
-					<Icons size={18} />
+					<Icons size={18} setValue={setValue} />
 				</Box>
 			</Toolbar>
 		</AppBar>

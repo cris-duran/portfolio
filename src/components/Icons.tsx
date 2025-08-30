@@ -6,7 +6,13 @@ import whatsappIcon from "@assets/whatsapp.svg";
 import { Button, ButtonGroup } from "@mui/material";
 import { Link } from "react-router-dom";
 
-function Icons({ size = 24 }: { size?: number }) {
+function Icons({
+	size = 24,
+	setValue,
+}: {
+	size?: number;
+	setValue?: (value: string) => void;
+}) {
 	const sizePx = `${size}px`;
 
 	const buttonStyle = {
@@ -23,7 +29,7 @@ function Icons({ size = 24 }: { size?: number }) {
 	return (
 		<ButtonGroup>
 			<Button
-				variant="outlined"
+				variant="text"
 				sx={buttonStyle}
 				component={Link}
 				to="https://www.linkedin.com/in/cris-duran/"
@@ -42,7 +48,7 @@ function Icons({ size = 24 }: { size?: number }) {
 				/>
 			</Button>
 			<Button
-				variant="outlined"
+				variant="text"
 				sx={buttonStyle}
 				component={Link}
 				to="https://github.com/cris-duran"
@@ -61,12 +67,11 @@ function Icons({ size = 24 }: { size?: number }) {
 				/>
 			</Button>
 			<Button
-				variant="outlined"
+				variant="text"
 				sx={buttonStyle}
 				component={Link}
 				to="/cv"
-				target="_blank"
-				rel="noopener noreferrer"
+				onClick={() => setValue && setValue("cv")}
 			>
 				<img
 					src={cvIcon}
@@ -80,7 +85,7 @@ function Icons({ size = 24 }: { size?: number }) {
 				/>
 			</Button>
 			<Button
-				variant="outlined"
+				variant="text"
 				sx={buttonStyle}
 				component={Link}
 				to="mailto:contacto@cduran.cl"
@@ -97,7 +102,7 @@ function Icons({ size = 24 }: { size?: number }) {
 				/>
 			</Button>
 			<Button
-				variant="outlined"
+				variant="text"
 				sx={buttonStyle}
 				component={Link}
 				to="https://wa.me/56932106131"

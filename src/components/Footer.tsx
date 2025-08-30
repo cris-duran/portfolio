@@ -7,7 +7,7 @@ function Footer({ setValue }: { setValue: (value: string) => void }) {
 		<footer className="footer">
 			{/* Iconos de contacto */}
 			<Box sx={{ display: "flex", justifyContent: "center", marginBottom: 2 }}>
-				<Icons size={12} />
+				<Icons size={18} setValue={setValue} />
 			</Box>
 
 			<Typography variant="h6" color="white.dark" align="center">
