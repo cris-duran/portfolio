@@ -1,5 +1,6 @@
 import cristianLogo from "@assets/cristian.png";
 import { Card, CardContent, CardMedia, Rating } from "@mui/material";
+import { useState, useEffect } from "react";
 
 function Logo({
 	size = 80,
@@ -8,6 +9,28 @@ function Logo({
 	size?: number;
 	isRating?: boolean;
 }) {
+	const [rating, setRating] = useState(1);
+
+	useEffect(() => {
+		if (!isRating) return;
+
+		const timer = setTimeout(() => {
+			const interval = setInterval(() => {
+				setRating((prevRating) => {
+					if (prevRating >= 5) {
+						clearInterval(interval);
+						return 5;
+					}
+					return prevRating + 1;
+				});
+			}, 150); // Cada estrella aparece cada 200ms
+
+			return () => clearInterval(interval);
+		}, 250); // Comienza después de 500ms
+
+		return () => clearTimeout(timer);
+	}, [isRating]);
+
 	return (
 		<Card
 			variant="outlined"
@@ -50,8 +73,8 @@ function Logo({
 				>
 					<Rating
 						name="half-rating-read"
-						defaultValue={5}
-						precision={0.5}
+						value={rating}
+						precision={1}
 						readOnly
 						sx={{
 							"& .MuiRating-iconFilled": {
