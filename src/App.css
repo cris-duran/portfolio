@@ -14,3 +14,38 @@
   align-items: center;
   justify-content: center;
 }
+
+/* Home: Lineas de la imagen  */
+.figure-lines {
+  position: absolute;
+  inset: -.8rem;
+  z-index: -1;
+}
+
+.figure-lines::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(var(--color),.2);
+  border-radius: 100%;
+  filter: blur(100px);
+}
+
+.figure-line {
+  position: absolute;
+  background-color: rgba(var(--color),.5);
+}
+
+.figure-line-1 {
+  width: 1px;
+  right: 0;
+  top: -2rem;
+  bottom: -2rem;
+}
+
+.figure-line-1, figure-line-2 {
+  mask-image: linear-gradient(to top,transparent,white 4rem,white calc(100% - 4rem),transparent);
+}
