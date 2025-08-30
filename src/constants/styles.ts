@@ -13,7 +13,7 @@ export const styles: { [key: string]: React.CSSProperties | SxProps } = {
 	appBar: {
 		backgroundColor: "rgb(29, 23, 39)",
 		boxShadow: "none",
-		borderBottom: "1px solid #e0e0e0",
+		borderBottom: "1px solid turquoise",
 	},
 	tabs: {
 		"& .MuiTabs-indicator": {

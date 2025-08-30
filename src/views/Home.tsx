@@ -42,6 +42,7 @@ function Home() {
 					<Typography
 						variant="h1"
 						fontSize={{ xs: 24, sm: 30, md: 36 }}
+						fontWeight="bold"
 						color="white"
 						sx={{ marginBottom: 1 }}
 					>
@@ -51,6 +52,7 @@ function Home() {
 					<Typography
 						variant="h1"
 						fontSize={18}
+						fontWeight="bold"
 						color="white"
 						sx={{ marginBottom: 1 }}
 					>
@@ -59,7 +61,7 @@ function Home() {
 					{/* Descripción */}
 					<Typography
 						variant="body1"
-						fontSize={{ xs: 12, sm: 13, md: 14 }}
+						fontSize={{ xs: 14, sm: 15, md: 16 }}
 						color="white"
 						sx={{
 							marginBottom: 3,
@@ -67,8 +69,8 @@ function Home() {
 							padding: { xs: "0 8px", sm: "0" },
 						}}
 					>
-						Desde chico siempre me ha gustado aprender cosas nuevas y la
-						tecnología se convirtió en una de mis mayores pasiones. Soy{" "}
+						Desde pequeño siempre me ha gustado aprender cosas nuevas y la
+						tecnología se convirtió en una de mis mayores pasiones. Soy un{" "}
 						<span style={{ color: "yellow", fontWeight: "bold" }}>
 							Ingeniero Civil en Computación
 						</span>{" "}
@@ -76,14 +78,14 @@ function Home() {
 						<span style={{ color: "yellow", fontWeight: "bold" }}>
 							Universidad de Chile
 						</span>
-						, donde me titulé con distinción máxima, y desde entonces he estado
-						ligado al desarrollo de software, sobre todo en el mundo de las
-						aplicaciones web.{" "}
+						, titulado con distinción máxima, y desde mi primera práctica
+						profesional he estado ligado al desarrollo de software, sobre todo
+						en el mundo de las aplicaciones web.{" "}
 					</Typography>
 
 					<Typography
 						variant="body1"
-						fontSize={14}
+						fontSize={{ xs: 14, sm: 15, md: 16 }}
 						color="white"
 						sx={{ marginBottom: 3, maxWidth: "800px" }}
 					>
@@ -120,7 +122,7 @@ function Home() {
 
 					<Typography
 						variant="body1"
-						fontSize={14}
+						fontSize={{ xs: 14, sm: 15, md: 16 }}
 						color="white"
 						sx={{ marginBottom: 3, maxWidth: "800px" }}
 					>
@@ -152,7 +154,7 @@ function Home() {
 
 					<Typography
 						variant="body1"
-						fontSize={14}
+						fontSize={{ xs: 14, sm: 15, md: 16 }}
 						color="white"
 						sx={{ marginBottom: 3, maxWidth: "800px" }}
 					>
@@ -168,7 +170,7 @@ function Home() {
 							Ordéname
 						</span>
 						, donde trabajé en equipo dando soporte y agregando nuevas
-						funcionalidades a OrdénamePay y Ordéname Cobranzas, con tecnologías
+						funcionalidades a OrdénamePay y Ordéname Backoffice, con tecnologías
 						como{" "}
 						<span style={{ color: "turquoise", fontWeight: "bold" }}>
 							Angular
@@ -190,7 +192,7 @@ function Home() {
 
 					<Typography
 						variant="body1"
-						fontSize={14}
+						fontSize={{ xs: 14, sm: 15, md: 16 }}
 						color="white"
 						sx={{ marginBottom: 3, maxWidth: "800px" }}
 					>
@@ -250,7 +252,7 @@ function Home() {
 
 					<Typography
 						variant="body1"
-						fontSize={14}
+						fontSize={{ xs: 14, sm: 15, md: 16 }}
 						color="white"
 						sx={{ marginBottom: 3, maxWidth: "800px" }}
 					>

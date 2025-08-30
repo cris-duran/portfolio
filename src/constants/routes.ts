@@ -3,7 +3,7 @@
 import Cv from "@views/Cv";
 // import Experience from "@views/Experience";
 import Home from "@views/Home";
-// import Projects from "@views/Projects";
+import Projects from "@views/Projects";
 
 export const routes = [
 	{
@@ -18,12 +18,12 @@ export const routes = [
 	// 	path: "/about-me",
 	// 	component: About,
 	// },
-	// {
-	// 	name: "Proyectos",
-	// 	value: "projects",
-	// 	path: "/projects",
-	// 	component: Projects,
-	// },
+	{
+		name: "Proyectos",
+		value: "projects",
+		path: "/projects",
+		component: Projects,
+	},
 	// {
 	// 	name: "Experiencia",
 	// 	value: "experience",
