@@ -25,7 +25,7 @@ export const projects: Project[] = [
 			"Nginx",
 			"Mapbox",
 		],
-		image: "/plan-local.png", // Puedes agregar imágenes reales de tus proyectos
+		image: "/plan-local.jpeg", // Puedes agregar imágenes reales de tus proyectos
 		liveUrl: "https://planlocaldeficitcero.cl",
 		company: "Simplicity",
 		period: "Feb 2024 - Presente",
@@ -51,7 +51,7 @@ export const projects: Project[] = [
 			"n8n",
 			"Jira",
 		],
-		image: "/autored.png",
+		image: "/autored.jpeg",
 		liveUrl: "https://autored.cl",
 		company: "Autored",
 		period: "Feb 2025 - Presente",
@@ -70,7 +70,7 @@ export const projects: Project[] = [
 			"Docker",
 			"ERP",
 		],
-		image: "/ordename.png",
+		image: "/ordename.jpeg",
 		liveUrl: "https://ordename.cl",
 		company: "Ordéname",
 		period: "Ago 2024 - Abr 2025",

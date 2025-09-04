@@ -16,5 +16,5 @@ docker compose up --build -d
 ```
 
 ## Puertos
-- 8080: Habilitado cuando se corre develop
+- 8082: Habilitado cuando se corre develop
 - 80: Habilitado cuando se corre producción
