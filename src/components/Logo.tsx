@@ -1,6 +1,6 @@
-import cristianLogo from "@assets/cristian.png";
+import cristianLogo from "@assets/cristian.jpeg";
 import { Card, CardContent, CardMedia, Rating } from "@mui/material";
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 
 function Logo({
 	size = 80,
