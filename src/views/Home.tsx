@@ -103,6 +103,10 @@ function Home() {
 	return (
 		<section className="home">
 			<article className="centered">
+				<title>Cristian Durán - Software Engineer</title>
+				<meta name="author" content="Cristian Durán"/>
+				<meta name="keywords" content="Cristian, Duran, Cristian Duran, Desarrollador, Full Stack, Software Engineer, Software, Software Developer, Ingeniero, Ingeniero Civil en Computacion, Portafolio, Universidad de Chile"/>
+				<meta name="description" content="Portafolio de Cristian Duran, Ingeniero Civil en Computacion de la Universidad de Chile. Desarrollador de Software Full Stack."/>
 				<Container
 					maxWidth="lg"
 					sx={{

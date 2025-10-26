@@ -14,6 +14,10 @@ import {
 function Projects() {
 	return (
 		<section className="projects">
+			<title>Proyectos de Cristian Durán</title>
+			<meta name="author" content="Cristian Durán"/>
+			<meta name="keywords" content="Cristian, Duran, Cristian Duran, Desarrollador, Full Stack, Software Engineer, Software, Software Developer, Ingeniero, Ingeniero Civil en Computacion, Portafolio, Universidad de Chile, Proyectos, Proyecto, Proyectos de Cristian Duran"/>
+			<meta name="description" content="Proyectos de Cristian Duran. Plataforma Plan Local de Déficit Cero, Ordéname Pay y Autored."/>
 			<Container maxWidth="lg" sx={{ py: { xs: 2, sm: 3, md: 4 } }}>
 				{/* Título principal */}
 				<Box sx={{ textAlign: "center", mb: { xs: 1, sm: 2, md: 3 } }}>
