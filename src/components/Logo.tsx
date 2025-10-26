@@ -50,6 +50,7 @@ function Logo({
 			<CardMedia
 				component="img"
 				image={cristianLogo}
+				alt="Cristian Durán - Ingeniero Civil en Computación y Desarrollador Full Stack"
 				title="Cristian Durán Avatar"
 				sx={{
 					borderRadius: "100%",

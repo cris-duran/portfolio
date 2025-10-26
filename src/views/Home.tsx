@@ -132,6 +132,7 @@ function Home() {
 
 					{/* Nombre */}
 					<Typography
+						component="h1"
 						variant="h1"
 						fontSize={{ xs: 24, sm: 30, md: 36 }}
 						fontWeight="bold"
@@ -143,7 +144,8 @@ function Home() {
 
 					{/* Cargo */}
 					<Typography
-						variant="h1"
+						component="h2"
+						variant="h2"
 						fontSize={18}
 						fontWeight="bold"
 						color="white"

@@ -82,7 +82,7 @@ function Projects() {
 									component="img"
 									height="200"
 									image={project.image}
-									alt={project.title}
+									alt={`${project.title} - Proyecto desarrollado por Cristian Durán en ${project.company}`}
 									sx={{
 										backgroundColor: "rgba(255, 255, 255, 0.05)",
 										objectFit: "cover",
