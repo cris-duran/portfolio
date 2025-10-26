@@ -95,7 +95,7 @@ function Icons({
 				variant="text"
 				sx={buttonStyle}
 				component={Link}
-				to="mailto:contacto@cduran.cl"
+				to="mailto:info@cduran.cl"
 			>
 				<img
 					src={emailIcon}

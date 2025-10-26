@@ -1,7 +1,7 @@
 // import About from "@views/About";
 // import Contact from "@views/Contact";
 import Cv from "@views/Cv";
-// import Experience from "@views/Experience";
+import Certificate from "@views/Certificate";
 import Home from "@views/Home";
 import Projects from "@views/Projects";
 
@@ -30,12 +30,12 @@ export const routes = [
 	// 	path: "/experience",
 	// 	component: Experience,
 	// },
-	// {
-	// 	name: "Contacto",
-	// 	value: "contact",
-	// 	path: "/contact",
-	// 	component: Contact,
-	// },
+	{
+		name: "Certificado de Titulo",
+		value: "certificate",
+		path: "/certificate",
+		component: Certificate,
+	},
 	{
 		name: "CV",
 		value: "cv",
